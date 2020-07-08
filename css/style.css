@@ -41,7 +41,7 @@ body {
 }
 
 .section{
-    padding:1.5em;
+    padding:2em;
 }
 
 .sp-component__title{
@@ -62,13 +62,13 @@ body {
 }
 
 .join__subtitle{
-    font-size:0.7rem;
+    font-size:0.9rem;
     color:#c2e429;
-    margin-bottom:20px;
+    margin-bottom:10px;
 }
 
 .join__paragraph{
-    font-size:0.7rem;
+    font-size:0.8rem;
     line-height:1.3rem;
     color:#acb3b8;
 
@@ -126,7 +126,7 @@ body {
     color:#fff;
     font-size:0.9rem;
     opacity:0.8;
-    padding-bottom:4px;
+    padding-bottom:2px;
 }
 
 @media screen and (min-width:768px){
