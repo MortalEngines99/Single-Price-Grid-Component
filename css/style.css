@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:regular,italic,700,700italic");
+
+/* Simple Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Karla, sans-serif;
+}
+
+h1,h2,h3,h4,h5,p,button
+{margin:0;padding:0;}
+
+ul,li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+/* ============================ */
+
+:root{
+    font-size:20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background:#e6eff6;
+}
+
+.sp-component {
+    max-width:700px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    border-radius:5px;
+    box-shadow:0 5px 10px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.section{
+    padding:1.5em;
+}
+
+.sp-component__title{
+    font-size:1.1rem;
+    margin-bottom:20px;
+}
+
+.sp-component__title_cyan{
+    color:#2ab2af;
+}
+
+.sp-component__title_white{
+    color:#fff;
+}
+
+.join {
+    background:#FFF;
+}
+
+.join__subtitle{
+    font-size:0.7rem;
+    color:#c2e429;
+    margin-bottom:20px;
+}
+
+.join__paragraph{
+    font-size:0.7rem;
+    line-height:1.3rem;
+    color:#acb3b8;
+
+}
+
+.subscription {
+    background:hsl(179, 61%, 44%);
+}
+
+.price-div{
+    display:flex;;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.price-div__price{
+    font-size:1.5rem;
+    color:#FFF;
+    font-weight: bold;
+}
+
+.price-div__month{
+    margin-left:13px;
+    color:#fff;
+    opacity:0.6;
+    font-size:0.9rem;
+}
+
+.subscription__paragraph{
+    color:#fff;
+    font-size:0.9rem;
+    margin-bottom:30px;
+}
+
+.subscription__signup-btn{
+    display:block;
+    width:100%;
+    font-size:0.9rem;
+    padding:1em 0;
+    background:hsl(71, 73%, 54%);
+    color:#fff;
+    font-weight: bold;
+    border:none;
+    border-radius:5px;
+    box-shadow:0 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.why {
+    background:#4abebd;
+}
+
+.why__list-items{
+    color:#fff;
+    font-size:0.9rem;
+    opacity:0.8;
+    padding-bottom:4px;
+}
+
+@media screen and (min-width:768px){
+
+    body{
+        display:grid;
+        height:100vh;
+        place-items:center;
+    }
+    .sp-component{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;
+    }
+
+    .join{
+        grid-column: 1/ span 3;
+    }
+}
